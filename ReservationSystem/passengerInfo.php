@@ -1,3 +1,11 @@
+<?php
+	if(isset($_SESSION["completed"])){
+		if($_SESSION["completed"]=="done"){
+			header("Location:success.php");
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

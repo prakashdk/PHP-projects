@@ -28,12 +28,14 @@
 			
 			<?php
 			session_start();
+			$_SESSION["completed"]="undone";
 			if(isset($_SESSION["status"])){
 
 
 
 				$status=$_SESSION["status"];
 				if($status=="1"){
+					$_SESSION["completed"]="done";
 					echo "<i class='fa fa-check-circle' style='font-size:150px;color:green'></i><h1>Your Ticket Booking has Confirmed</h1>";
 				}
 				else{
@@ -44,7 +46,6 @@
 				echo "<i class='fa fa-warning' style='font-size:150px;color:red'></i><h1>Your Ticket Booking is failed</h1>";
 			}
 			?>
-			
 			<a class="btn btn-default" href="index.php">Go Home</a>
 		</div>
 		
