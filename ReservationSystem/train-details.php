@@ -42,12 +42,12 @@ session_start();
 		
 	}
 	else{
-		echo "Failed <a href='./booking.html'>Retry</a>";
+		echo "Failed <a href='./booking.php'>Retry</a>";
 	}
 		//print_r($_SESSION);
 		header("Location:passengerInfo.php");
 	}
 	else{
-		echo "Failed <a href='./booking.html'>Retry</a>";
+		echo "Failed <a href='./booking.php'>Retry</a>";
 	}
 ?>

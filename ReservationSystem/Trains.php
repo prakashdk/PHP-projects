@@ -135,7 +135,7 @@ session_start();
 		//echo isEqual(day($date),$row["day"]);
 	}
 }
-else{ echo "Failed <a href='./booking.html'>Retry</a>";}
+else{ echo "Failed <a href='./booking.php'>Retry</a>";}
 
 	function day($value){
 		$date=explode("-",$value);
